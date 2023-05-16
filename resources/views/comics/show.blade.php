@@ -11,4 +11,6 @@
         <small>{{ $comics->description }}</small>
 
     </div>
+
+    <a href="{{ route('comics.index') }}" class="btn btn-info">Come Back</a>
 @endsection
