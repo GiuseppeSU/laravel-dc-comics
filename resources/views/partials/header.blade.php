@@ -1,1 +1,4 @@
-<h1>questo è l'header</h1>
+<ul>
+    <li><a href="{{ route('home') }}">DC comics</a></li>
+    <li><a href="{{ route('comics.index') }}">I nostri fumetti</a></li>
+</ul>
