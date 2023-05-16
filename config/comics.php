@@ -8,34 +8,9 @@ return [
         "series" => "Action Comics",
         "sale_date" => "2018-10-02",
         "type" => "comic book",
-        "artists" => [
-            "José Luis García-López",
-            "Clay Mann",
-            "Rafael Albuquerque",
-            "Patrick Gleason",
-            "Dan Jurgens",
-            "Joe Shuster",
-            "Neal Adams",
-            "Curt Swan",
-            "John Cassaday",
-            "Olivier Coipel",
-            "Jim Lee"
-        ],
-        "writers" => [
-            "Brad Meltzer",
-            "Tom King",
-            "Scott Snyder",
-            "Geoff Johns",
-            "Brian Michael Bendis",
-            "Paul Dini",
-            "Louise Simonson",
-            "Richard Donner",
-            "Marv Wolfman",
-            "Peter J. Tomasi",
-            "Dan Jurgens",
-            "Jerry Siegel",
-            "Paul Levitz"
-        ],
+
+
+
     ],
     [
         "title" => "American Vampire 1976 #1",
@@ -45,12 +20,8 @@ return [
         "series" => "American Vampire 1976",
         "sale_date" => "2020-10-06",
         "type" => "comic book",
-        "artists" => [
-            "Rafael Albuquerque"
-        ],
-        "writers" => [
-            "Scott Snyder"
-        ],
+
+
     ],
     [
         "title" => "Aquaman Vol. 4: Underworld",
@@ -60,12 +31,7 @@ return [
         "series" => "Aquaman",
         "sale_date" => "2018-01-24",
         "type" => "graphic novel",
-        "artists" => [
-            "Stjepan Sejic"
-        ],
-        "writers" => [
-            "Dan Abnett"
-        ],
+
     ],
     [
         "title" => "Batgirl #1",
@@ -75,12 +41,7 @@ return [
         "series" => "Batgirl",
         "sale_date" => "2016-07-27",
         "type" => "comic book",
-        "artists" => [
-            "Rafael Albuquerque"
-        ],
-        "writers" => [
-            "Hope Larson"
-        ],
+
     ],
     [
         "title" => "Batman #56",
@@ -90,12 +51,7 @@ return [
         "series" => "Batman",
         "sale_date" => "2018-10-03",
         "type" => "comic book",
-        "artists" => [
-            "Tony S. Daniel"
-        ],
-        "writers" => [
-            "Tom King"
-        ],
+
     ],
     [
         "title" => "Batman Beyond #1",
@@ -105,13 +61,8 @@ return [
         "series" => "Batman Beyond",
         "sale_date" => "2016-10-26",
         "type" => "comic book",
-        "artists" => [
-            "Bernard Chang"
-        ],
-        "writers" => [
-            "Dan Jurgens"
-        ],
     ],
+
     [
         "title" => "Batman/Superman #1",
         "description" => "Up in the sky, in the dark of the night, trust no one - for the infected walk among us. Spinning out of the devastating events of THE BATMAN WHO LAUGHS, Superman and Batman are together once more in an all-new monthly series - and they're facing a terrifying new threat that could strike from anywhere. The Dark Knight and the Man of Steel must journey into the depths of Gotham City to learn which of their fellow heroes has been transformed into the horrifying horseman of their most dangerous and deranged foe ever. Our heroes will need to fight to survive, but an even more dangerous question lurkes in the shadows: Can Superman and Batman even trust each other?",
@@ -120,12 +71,7 @@ return [
         "series" => "Batman/Superman",
         "sale_date" => "2019-08-28",
         "type" => "comic book",
-        "artists" => [
-            "David Marquez"
-        ],
-        "writers" => [
-            "Joshua Williamson"
-        ],
+
     ],
     [
         "title" => "Batman/Superman Annual #1",
@@ -135,14 +81,7 @@ return [
         "series" => "Batman/Superman Annual",
         "sale_date" => "2020-09-29",
         "type" => "comic book",
-        "artists" => [
-            "Clayton Henry",
-            "Gleb Melnikov",
-            "Dale Eaglesham"
-        ],
-        "writers" => [
-            "Joshua Williamson"
-        ],
+
     ],
     [
         "title" => "Batman: The Joker War Zone #1",
@@ -152,18 +91,7 @@ return [
         "series" => "Batman: The Joker War Zone",
         "sale_date" => "2020-09-29",
         "type" => "comic book",
-        "artists" => [
-            "Guillem March",
-            "Ashley A. Woods",
-            "Olivier Coipel",
-            "James Stokoe",
-            "Darko Lafuente"
-        ],
-        "writers" => [
-            "Sam Johns",
-            "Joshua Williamson",
-            "John Ridley"
-        ],
+
     ],
     [
         "title" => "Batman: Three Jokers #1",
@@ -173,12 +101,7 @@ return [
         "series" => "Batman: Three Jokers",
         "sale_date" => "2020-08-25",
         "type" => "comic book",
-        "artists" => [
-            "Jason Fabok"
-        ],
-        "writers" => [
-            "Geoff Johns"
-        ],
+
     ],
     [
         "title" => "Batman: White Knight Presents: Harley Quinn #1",
@@ -188,12 +111,7 @@ return [
         "series" => "Batman: White Knight Presents: Harley Quinn",
         "sale_date" => "2020-10-20",
         "type" => "comic book",
-        "artists" => [
-            "Matteo Scalera"
-        ],
-        "writers" => [
-            "Katana Collins"
-        ],
+
     ],
     [
         "title" => "Catwoman Vol. 1: Copycats",
@@ -203,12 +121,6 @@ return [
         "series" => "Catwoman",
         "sale_date" => "2019-04-10",
         "type" => "graphic novel",
-        "artists" => [
-            "Fernando Blanco",
-            "Joëlle Jones"
-        ],
-        "writers" => [
-            "Joëlle Jones"
-        ],
+
     ],
 ];

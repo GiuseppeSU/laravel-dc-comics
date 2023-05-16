@@ -1,1 +1,1 @@
-<h1>questo è il footer</h1>
+<h1 class="text-center">Made with <span class="text-danger">&hearts;</span> by boolean</h1>

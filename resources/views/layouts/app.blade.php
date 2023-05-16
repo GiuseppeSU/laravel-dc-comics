@@ -9,9 +9,9 @@
     @vite('resources/js/app.js')
 </head>
 
-<body>
+<body class="bg-black my_background">
     @include('partials.header')
-    <main>
+    <main class="bg-black">
         <div class="container">
             @yield('content')
 

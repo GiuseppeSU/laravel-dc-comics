@@ -2,7 +2,11 @@
 
 @section('page-title', 'Fumetti')
 @section('content')
-    <a href="{{ route('comics.create') }}" class="btn btn-primary">Crea il fumetto dei tuoi sogni</a>
+    <div class="text-center my-3">
+        <a href="{{ route('comics.create') }}" class="btn btn-primary ">Crea il fumetto dei tuoi sogni</a>
+
+    </div>
+
     <div class="container">
         <div class="row">
             @foreach ($comics as $comic)

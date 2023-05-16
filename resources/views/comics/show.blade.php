@@ -11,6 +11,8 @@
         <small>{{ $comics->description }}</small>
 
     </div>
+    <div class="text-center mt-3">
+        <a href="{{ route('comics.index') }}" class="btn btn-info">Come Back</a>
 
-    <a href="{{ route('comics.index') }}" class="btn btn-info">Come Back</a>
+    </div>
 @endsection
