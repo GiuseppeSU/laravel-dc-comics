@@ -18,12 +18,21 @@
                         <div class="card-body">
                             <p class="card-text">{{ $comic->description }}</p>
                             <p>{{ $comic->price }}$</p>
-                            <a type="button" class="btn btn-danger"
-                                href={{ route('comics.show', ['comic' => $comic->id]) }}>Show
-                            </a>
-                            <a type="button" class="btn btn-info"
-                                href={{ route('comics.edit', ['comic' => $comic->id]) }}>Modifica
-                            </a>
+                            <div class="d-flex justify-content-center">
+                                <a type="button" class="btn btn-danger me-2"
+                                    href={{ route('comics.show', ['comic' => $comic->id]) }}>Show
+                                </a>
+                                <a type="button" class="btn btn-info"
+                                    href={{ route('comics.edit', ['comic' => $comic->id]) }}>Modifica
+                                </a>
+                                <form action={{ route('comics.destroy', ['comic' => $comic->id]) }} method="POST">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger ms-2">Rimuovi</button>
+                                </form>
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
