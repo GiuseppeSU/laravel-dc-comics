@@ -11,7 +11,7 @@
 
 <body class="bg-black my_background">
     @include('partials.header')
-    <main class="bg-black">
+    <main>
         <div class="container">
             @yield('content')
 

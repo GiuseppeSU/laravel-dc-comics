@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('page-title', 'DCComics')
+@section('page-title', 'DC Comics')
 @section('content')
 
 @endsection
