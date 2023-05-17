@@ -5,6 +5,7 @@
     <div class="text-center my-3">
         <a href="{{ route('comics.create') }}" class="btn btn-primary ">Crea il fumetto dei tuoi sogni</a>
 
+
     </div>
 
     <div class="container">
@@ -19,6 +20,9 @@
                             <p>{{ $comic->price }}$</p>
                             <a type="button" class="btn btn-danger"
                                 href={{ route('comics.show', ['comic' => $comic->id]) }}>Show
+                            </a>
+                            <a type="button" class="btn btn-info"
+                                href={{ route('comics.edit', ['comic' => $comic->id]) }}>Modifica
                             </a>
                         </div>
                     </div>

@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <form method="POST" action="{{ route('comics.update', ['comic' => $pasta->id]) }}">
+    <form method="POST" action="{{ route('comics.update', ['comic' => $comics->id]) }}">
         @csrf
         @method('PUT')
 
