@@ -38,13 +38,13 @@ class ComicsController extends Controller
     {
 
         $request->validate([
-            'title' => 'required|url|max:255',
-            'thumb' => 'required|max:50',
-            'description' => 'required|max:20',
+            'title' => 'required|max:4',
+            'thumb' => 'required|max:250',
+            'description' => 'required|max:220',
             'price' => 'required|max:10',
             'series' => 'required|max:10',
-            'sale_date' => 'nullable|max:65535',
-            'type' => 'nullable|max:65535',
+            'sale_date' => 'required|max:65535',
+            'type' => 'required|max:65535',
         ]);
         $form_data = $request->all();
 
@@ -100,13 +100,13 @@ class ComicsController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'title' => 'required|url|max:255',
-            'thumb' => 'required|max:50',
-            'description' => 'required|max:20',
+            'title' => 'required|max:4',
+            'thumb' => 'required|max:250',
+            'description' => 'required|max:220',
             'price' => 'required|max:10',
             'series' => 'required|max:10',
-            'sale_date' => 'nullable|max:65535',
-            'type' => 'nullable|max:65535',
+            'sale_date' => 'required|max:65535',
+            'type' => 'required|max:65535',
         ]);
         $comics = Comics::findOrFail($id);
         $form_data = $request->all();

@@ -163,8 +163,34 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'title' => [
+            'required' => 'Inserire il titolo',
+            'max' => 'Puoi utilizzare massimo 10 caratteri',
+        ],
+
+        'thumb' => [
+            'required' => 'Inserire URL immagine',
+            'max' => 'Puoi utilizzare massimo 250 caratteri',
+        ],
+        'description' => [
+            'required' => 'Inserire la descrizione',
+            'max' => 'Puoi utilizzare massimo 220 caratteri',
+        ],
+        'price' => [
+            'required' => 'Inserire il prezzo',
+            'max' => 'Puoi utilizzare massimo 10 caratteri',
+        ],
+        'series' => [
+            'required' => 'Inserire la serie del fumetto',
+            'max' => 'Puoi utilizzare massimo 10 caratteri',
+        ],
+        'sale_date' => [
+            'required' => 'Inserire la data di rilascio',
+            'max' => 'Puoi utilizzare massimo 65535 caratteri',
+        ],
+        'type' => [
+            'required' => 'Inserire il tipo di fumetto',
+            'max' => 'Puoi utilizzare massimo 65535 caratteri',
         ],
     ],
 
