@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Comics;
+
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class ComicsController extends Controller
 {
@@ -37,7 +39,7 @@ class ComicsController extends Controller
     public function store(Request $request)
     {
 
-        $request->validate([
+        /*$request->validate([
             'title' => 'required|max:4',
             'thumb' => 'required|max:250',
             'description' => 'required|max:220',
@@ -45,7 +47,7 @@ class ComicsController extends Controller
             'series' => 'required|max:10',
             'sale_date' => 'required|max:65535',
             'type' => 'required|max:65535',
-        ]);
+        ]);*/
         $form_data = $request->all();
 
 
@@ -99,7 +101,7 @@ class ComicsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $request->validate([
+        /*$request->validate([
             'title' => 'required|max:4',
             'thumb' => 'required|max:250',
             'description' => 'required|max:220',
@@ -107,7 +109,7 @@ class ComicsController extends Controller
             'series' => 'required|max:10',
             'sale_date' => 'required|max:65535',
             'type' => 'required|max:65535',
-        ]);
+        ]);*/
         $comics = Comics::findOrFail($id);
         $form_data = $request->all();
         $comics->update($form_data);
@@ -126,6 +128,44 @@ class ComicsController extends Controller
         $comics = Comics::findOrFail($id);
         $comics->delete();
         return redirect()->route('comics.index');
+
+
+    }
+
+    private function validation($data)
+    {
+
+        $validator = Validator::make(
+            $data,
+            [
+                'title' => 'required|max:50',
+                'thumb' => 'required|max:250',
+                'description' => 'required|max:220',
+                'price' => 'required|max:10',
+                'series' => 'required|max:10',
+                'sale_date' => 'required|max:10',
+                'type' => 'required|max:65535',
+            ],
+            [
+                'title.required' => "Il titolo è richiesto",
+                'title.max' => "Il titolo deve essere al massimo di 50 caratteri",
+                'thumb.required' => "Url dell'immagine richiesta",
+                'thumb.max' => "L'url dell'immagine deve essere al massimo di 250 caratteri",
+                'description.max' => "La descrizione deve essere lunga al massimo 65535 caratteri",
+                'price.required' => "Il prezzo è richiesto",
+                'price.max' => "Il prezzo deve essere al massimo di 10 caratteri",
+                'series.required' => "La serie  è richiesta",
+                'series.max' => "Il tempo di cottura deve essere al massimo di 10 caratteri",
+                'sale_date.required' => "La data è richiesta",
+                'sale_date.max' => "Il campo data deve essere al massimo di 10 caratteri",
+                'type.required' => "La data è richiesta",
+                'type.max' => "La descrizione deve essere lunga al massimo 65535 caratteri",
+
+            ]
+        )->validate();
+
+        return $validator;
+
 
 
     }
