@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreComicsRequest;
 use App\Models\Comics;
 
 use Illuminate\Http\Request;
@@ -36,35 +37,13 @@ class ComicsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreComicsRequest $request)
     {
-
-        /*$request->validate([
-            'title' => 'required|max:4',
-            'thumb' => 'required|max:250',
-            'description' => 'required|max:220',
-            'price' => 'required|max:10',
-            'series' => 'required|max:10',
-            'sale_date' => 'required|max:65535',
-            'type' => 'required|max:65535',
-        ]);*/
-        $form_data = $request->all();
-
-
+        $form_data = $request->validate();
         $newComics = new Comics;
         $newComics->fill($form_data);
-
-        /* $newComics->title = $form_data["title"];
-         $newComics->thumb = $form_data["thumb"];
-         $newComics->description = $form_data["description"];
-         $newComics->price = $form_data["price"];
-         $newComics->series = $form_data["series"];
-         $newComics->sale_date = $form_data["sale_date"];
-         $newComics->type = $form_data["type"];*/
-
         $newComics->save();
         return redirect()->route('comics.show', ['comic' => $newComics->id]);
-
     }
 
     /**
@@ -101,15 +80,7 @@ class ComicsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        /*$request->validate([
-            'title' => 'required|max:4',
-            'thumb' => 'required|max:250',
-            'description' => 'required|max:220',
-            'price' => 'required|max:10',
-            'series' => 'required|max:10',
-            'sale_date' => 'required|max:65535',
-            'type' => 'required|max:65535',
-        ]);*/
+
         $comics = Comics::findOrFail($id);
         $form_data = $request->all();
         $comics->update($form_data);
